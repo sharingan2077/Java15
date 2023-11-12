@@ -1,20 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Calculator" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="materialButtonStyle">@style/Theme.Calculator.Button</item>
+        <item name="colorPrimary">@color/grey</item>
     </style>
 
-    <style name="Theme.Calculator" parent="Base.Theme.Calculator" />
+    <style name="Theme.Calculator" parent="Base.Theme.Calculator"/>
 
 
-    <style name="ButtonStyle">
+    <style name="Theme.Calculator.Button" parent="Widget.Material3.Button">
         <item name="android:textSize">40sp</item>
         <item name="cornerRadius">0dp</item>
         <item name="android:textColor">@color/blue</item>
         <item name="android:backgroundTint">@color/grey</item>
-        <item name="layout_constraintDimensionRatio">1:1</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_width">0dp</item>
+        <item name="strokeColor">#BED3D1D1</item>
+        <item name="strokeWidth">1dp</item>
     </style>
 </resources>
